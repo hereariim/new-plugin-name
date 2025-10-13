@@ -5,6 +5,7 @@ except ImportError:
 
 from ._widget import (
     ExampleQWidget,
+    ImageLabeler,
     ImageThreshold,
     threshold_autogenerate_widget,
     threshold_magic_widget,
@@ -15,4 +16,5 @@ __all__ = (
     "ImageThreshold",
     "threshold_autogenerate_widget",
     "threshold_magic_widget",
+    "ImageLabeler",
 )

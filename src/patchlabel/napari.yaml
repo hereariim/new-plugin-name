@@ -18,6 +18,11 @@ contributions:
     - id: patchlabel.make_qwidget
       python_name: patchlabel:ExampleQWidget
       title: Make example QWidget
+    - id: patchlabel.ImageLabeler
+      python_name: patchlabel:ImageLabeler
+      title: ImageLabeler
+
+
   widgets:
     - command: patchlabel.make_container_widget
       display_name: Container Threshold
@@ -28,3 +33,5 @@ contributions:
       display_name: Autogenerate Threshold
     - command: patchlabel.make_qwidget
       display_name: Example QWidget
+    - command: patchlabel.ImageLabeler
+      display_name: ImageLabeler
