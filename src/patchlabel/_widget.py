@@ -247,7 +247,20 @@ class ImageLabeler(QWidget):
         # Label buttons
         layout.addWidget(QLabel("Assign label:"))
         label_row = QHBoxLayout()
-        for cls in ["A", "B", "C", "C3", "D", "E", "E2", "F", "F2", "G", "H"]:
+        for cls in [
+            "A",
+            "B",
+            "C",
+            "C3",
+            "D",
+            "E",
+            "E2",
+            "F",
+            "F2",
+            "G",
+            "H",
+            "Autres",
+        ]:
             b = QPushButton(cls)
             b.clicked.connect(lambda checked, c=cls: self._assign_label(c))
             label_row.addWidget(b)
@@ -362,9 +375,9 @@ class ImageLabeler(QWidget):
         self._save_labels_file(
             append=False
         )  # rewrite entire file so last label wins
-        QMessageBox.information(
-            self, "Saved", f"Assigned label {label} to {fname}"
-        )
+        # QMessageBox.information(
+        #     self, "Saved", f"Assigned label {label} to {fname}"
+        # )
 
     def _save_labels_file(self, append: bool = True):
         """Write labels to the labels file in the folder. By default we rewrite the file

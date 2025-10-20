@@ -6,32 +6,32 @@ visibility: public
 # categories: []
 contributions:
   commands:
-    - id: patchlabel.make_container_widget
-      python_name: patchlabel:ImageThreshold
-      title: Make threshold Container widget
-    - id: patchlabel.make_magic_widget
-      python_name: patchlabel:threshold_magic_widget
-      title: Make threshold magic widget
-    - id: patchlabel.make_function_widget
-      python_name: patchlabel:threshold_autogenerate_widget
-      title: Make threshold function widget
-    - id: patchlabel.make_qwidget
-      python_name: patchlabel:ExampleQWidget
-      title: Make example QWidget
+    # - id: patchlabel.make_container_widget
+    #   python_name: patchlabel:ImageThreshold
+    #   title: Make threshold Container widget
+    # - id: patchlabel.make_magic_widget
+    #   python_name: patchlabel:threshold_magic_widget
+    #   title: Make threshold magic widget
+    # - id: patchlabel.make_function_widget
+    #   python_name: patchlabel:threshold_autogenerate_widget
+    #   title: Make threshold function widget
+    # - id: patchlabel.make_qwidget
+    #   python_name: patchlabel:ExampleQWidget
+    #   title: Make example QWidget
     - id: patchlabel.ImageLabeler
       python_name: patchlabel:ImageLabeler
       title: ImageLabeler
 
 
   widgets:
-    - command: patchlabel.make_container_widget
-      display_name: Container Threshold
-    - command: patchlabel.make_magic_widget
-      display_name: Magic Threshold
-    - command: patchlabel.make_function_widget
-      autogenerate: true
-      display_name: Autogenerate Threshold
-    - command: patchlabel.make_qwidget
-      display_name: Example QWidget
+    # - command: patchlabel.make_container_widget
+    #   display_name: Container Threshold
+    # - command: patchlabel.make_magic_widget
+    #   display_name: Magic Threshold
+    # - command: patchlabel.make_function_widget
+    #   autogenerate: true
+    #   display_name: Autogenerate Threshold
+    # - command: patchlabel.make_qwidget
+    #   display_name: Example QWidget
     - command: patchlabel.ImageLabeler
       display_name: ImageLabeler
